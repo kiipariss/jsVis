@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <main class="page">
+
+            <section class='Hello__box _container'>
+                <h1 id="hello"><a hello href="https://developer.mozilla.org/en-US/docs/Web/Events"
+                        target="_blanck">hello
+                        world</a></h1>
+            </section>
+
+            <section class='checkbox__block _container'>
+                <label class="check">
+                    <input type="checkbox" onchange="che()" name="checkbox" class="checkbox" checked>
+                    <!--label for="checkbox"  type="checkbox" onchange="che()" обязательные элементы-->
+                    Style list
+                </label>
+            </section>
+
+            <section class="Radio__block _container">
+                <label id="radio"><input tabindex="1" type="radio" name="r1" value="1" class='radio__check'><span
+                        class="check-style"></span> check1</label>
+
+                <label id="radio"><input tabindex="2" type="radio" name="r1" value="2" class='radio__check'><span
+                        class="check-style"></span> check2</label>
+
+                <label id="radio"><input tabindex="3" type="radio" name="r1" value="3" class='radio__check'><span
+                        class="check-style"></span> check3</label>
+                <button class="Btn__radio">test</button>
+
+            </section>
+
+            <section class="Select__block _container">
+                <select name="" id="mySelect" onchange='select()'>
+                    <option value="Text_1">Text 1</option>
+                    <option value="Text_1">Text 2</option>
+                    <option value="Text_1">Text 3</option>
+                    <option value="Text_1">Text 4</option>
+                </select>
+            </section>
+
+            <section class="range__block _container">
+
+                <div class="bild__range">
+                    <p> left top:
+                        <input type="range" class="range" name="leftTop" id="leftTop" min="0" max="100" value="0"
+                            oninput="genner()">
+                        <input class="textRange" type="text" name="textLeftTop" id="textLeftTop">
+                    </p>
+
+                    <p> right top:
+                        <input type="range" class="range" name="rightTop" id="rightTop" min="0" max="100" value="0"
+                            oninput="genner()">
+                        <input class="textRange" type="text" name="textRightTop" id="textRightTop">
+                    </p>
+
+                    <p> left bottom:
+                        <input type="range" class="range" name="rightBottom" id="rightBottom" min="0" max="100"
+                            value="0" oninput="genner()">
+                        <input class="textRange" type="text" name="textRightBottom" id="textRightBottom">
+                    </p>
+
+                    <p> right bottom:
+                        <input type="range" class="range" name="leftBottom" id="leftBottom" min="0" max="100" value="0"
+                            oninput="genner()">
+                        <input class="textRange" type="text" name="textLeftBottom" id="textLeftBottom">
+                    </p>
+                </div>
+
+                <div id="block"></div>
+
+                <div class="nones">
+                    <input type="range" name="range" class="range out" min="0" max="100" step="1" oninput="range()">
+                    <input type="text" id="x" class="textRange">
+                    <div id="test"> </div>
+                    <p id="x"></p>
+                </div>
+            </section>
+
+            <section class="navigation__block _container">
+                <nav id="nav">
+                    <div class="menu-item"> Меню 1
+                        <div class="submenu">Подменю 1</div>
+                    </div>
+                    <div class="menu-item"> Меню 2
+                        <div class="submenu">Подменю 2</div>
+                    </div>
+                    <div class="menu-item"> Меню 3
+                        <div class="submenu">Подменю 3</div>
+                    </div>
+                </nav>
+            </section>
+
+            <section class="tab__block _container">
+                <div id="tabs">
+                    <div class="tab whiteborder">Tabe 1 </div>
+                    <div class="tab">Tabe 2</div>
+                    <div class="tab">Tabe 3</div>
+                    <div class="tabecontent">Content for 1</div>
+                    <div class="tabecontent">Content for 2</div>
+                    <div class="tabecontent">Content for 3</div>
+                </div>
+            </section>
+
+            <section class="openModal__block">
+                <button id="myBtn">Open modal</button>
+                <div class="modal__body">
+                    <div id="myModal" class="modal">
+                        <div class="modal-content">
+                            <div class="close">&times;</div>
+                            <div class="d43"></div>
+                            <div class="popup" onclick="popup()">Click
+                                <span class="popupText" id="mypopup">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. </span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="search__block _container">
+                <input type="text" onkeyup="searchFunct()" id="searchInput" placeholder="search for name">
+
+                <ul id="searchList">
+                    <li><a href="" class="search__header">A</a></li>
+                    <li><a href="">Anton</a></li>
+                    <li><a href="">Andreu</a></li>
+
+                    <li><a href="" class="search__header">B</a></li>
+                    <li><a href="">Boris</a></li>
+                    <li><a href="">Bill</a></li>
+                    <li><a href="">Bogdan</a></li>
+
+                    <li><a href="" class="search__header">C</a></li>
+                    <li><a href="">Celvin</a></li>
+                    <li><a href="">Christian</a></li>
+                </ul>
+            </section>
+
+            <section class="progressBar__block _container">
+                <button class="myDIV" onclick="toggle()">Doubleclick</button>
+                <div id="progressBAR__div">
+                    <div id="myProgress">
+                        <div id="myBar">
+                            <div id="lable">1% </div>
+                        </div>
+                    </div>
+                    <button onclick="move()">Click</button>
+                </div>
+
+
+            </section>
+
+            <section class="task__block _container">
+                <div id="myDIV" class="header">
+                    <h2>Ti DI app</h2>
+                    <input type="text" id="myInput" placeholder="Your new task">
+                    <span class="addBtn" onclick="newEl()"> add</span>
+                </div>
+                <ul id="myUL">
+                    <li class="lis" class="checked">Task 1</li>
+                    <li class="lis">Task 2</li>
+                    <li class="lis">Task 3</li>
+                    <li class="lis">Task 4</li>
+                    <li class="lis">Task 5</li>
+                </ul>
+            </section>
+
+            <section class="alers__block _container">
+                <div class="alerts">
+                    <span class="alerts__closebtn">&times;</span>
+                    <strong>Danger</strong>
+                </div>
+
+                <div class="alerts success">
+                    <span class="alerts__closebtn">&times;</span>
+                    <strong>success</strong>
+                </div>
+
+                <div class="alerts info">
+                    <span class="alerts__closebtn">&times;</span>
+                    <strong>Info</strong>
+                </div>
+
+                <div class="alerts warning">
+                    <span class="alerts__closebtn">&times;</span>
+                    <strong>Warning</strong>
+                </div>
+            </section>
+
+
+        </main>
+    </div>
+    <footer></footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
