@@ -5,7 +5,7 @@ const hello = document.getElementById('hello')
 
 let time = setTimeout(() => {
     addStyleTo(hello, 'Click to me!!!', '#66FCF1')
-}, 000)
+}, 2000)
 function addStyleTo(check, text, color = 'red') {
     check.textContent = text // меняет значение текста 
     check.style.color = color // меняет цвет текста 
